@@ -1,3 +1,5 @@
 venv/
 backend/venv/
 node_modules/
+__pycache__/
+.python-version
