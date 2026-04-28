@@ -4,6 +4,8 @@ Standalone module. bias_engine.py also has inline version;
 this is the canonical one used by main.py directly.
 """
 
+import math
+
 
 # ---------------------------------------------------------------------------
 # THRESHOLDS
@@ -21,6 +23,12 @@ THRESHOLDS = {
 # CORE
 # ---------------------------------------------------------------------------
 
+def _safe_get(d, key, default):
+    val = d.get(key, default)
+    if val is None or (isinstance(val, (float, int)) and math.isnan(float(val))):
+        return default
+    return float(val)
+
 def compute_fairrank(metrics: dict) -> dict:
     """
     Input:  metrics dict (from bias_engine.compute_metrics)
@@ -29,38 +37,40 @@ def compute_fairrank(metrics: dict) -> dict:
     FairRank = 100 - sum(penalties for triggered thresholds)
     Clamped to [0, 100].
     """
-    m = metrics["metrics"]
+    m = metrics.get("metrics", {})
     score = 100
     penalties = []
 
     # Demographic Parity Difference
-    dpd = abs(m["demographic_parity_difference"])
+    raw_dpd = _safe_get(m, "demographic_parity_difference", 0.0)
+    dpd = abs(raw_dpd)
     if dpd > THRESHOLDS["demographic_parity_difference"]["limit"]:
         p = THRESHOLDS["demographic_parity_difference"]["penalty"]
         score -= p
         penalties.append({
             "metric": "Demographic Parity Difference",
-            "value": round(m["demographic_parity_difference"], 4),
+            "value": round(raw_dpd, 4),
             "threshold": f"> {THRESHOLDS['demographic_parity_difference']['limit']}",
             "penalty": -p,
             "interpretation": "Privileged group receives favorable outcome at significantly higher rate.",
         })
 
     # Equalized Odds Difference
-    eod = abs(m["equalized_odds_difference"])
+    raw_eod = _safe_get(m, "equalized_odds_difference", 0.0)
+    eod = abs(raw_eod)
     if eod > THRESHOLDS["equalized_odds_difference"]["limit"]:
         p = THRESHOLDS["equalized_odds_difference"]["penalty"]
         score -= p
         penalties.append({
             "metric": "Equalized Odds Difference",
-            "value": round(m["equalized_odds_difference"], 4),
+            "value": round(raw_eod, 4),
             "threshold": f"> {THRESHOLDS['equalized_odds_difference']['limit']}",
             "penalty": -p,
             "interpretation": "Model error rates differ significantly across groups.",
         })
 
     # Disparate Impact (lower = worse, threshold is a floor not ceiling)
-    di = m["disparate_impact"]
+    di = _safe_get(m, "disparate_impact", 1.0)
     if di < THRESHOLDS["disparate_impact"]["limit"]:
         p = THRESHOLDS["disparate_impact"]["penalty"]
         score -= p
@@ -73,13 +83,14 @@ def compute_fairrank(metrics: dict) -> dict:
         })
 
     # False Positive Rate Gap
-    fpr_gap = abs(m["false_positive_rate_gap"])
+    raw_fpr_gap = _safe_get(m, "false_positive_rate_gap", 0.0)
+    fpr_gap = abs(raw_fpr_gap)
     if fpr_gap > THRESHOLDS["false_positive_rate_gap"]["limit"]:
         p = THRESHOLDS["false_positive_rate_gap"]["penalty"]
         score -= p
         penalties.append({
             "metric": "False Positive Rate Gap",
-            "value": round(m["false_positive_rate_gap"], 4),
+            "value": round(raw_fpr_gap, 4),
             "threshold": f"> {THRESHOLDS['false_positive_rate_gap']['limit']}",
             "penalty": -p,
             "interpretation": "One group flagged as high-risk far more often when they are not. Disproportionate false accusations.",

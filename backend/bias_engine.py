@@ -9,9 +9,10 @@ import pandas as pd
 from typing import Optional
 from pathlib import Path
 
-# AIF360 — BinaryLabelDataset only (avoid CompasDataset/AdultDataset pandas 2.x bug)
+# AIF360 imports
 from aif360.datasets import BinaryLabelDataset
 from aif360.metrics import BinaryLabelDatasetMetric, ClassificationMetric
+from aif360.algorithms.preprocessing import Reweighing
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
@@ -180,6 +181,52 @@ def load_healthcare() -> BinaryLabelDataset:
     return ds
 
 
+def infer_upload_config(filepath: str) -> dict:
+    df = pd.read_csv(filepath)
+    cols = [str(c).lower() for c in df.columns]
+    
+    # 1. Protected Col
+    protected_col = None
+    for cand in ["race", "sex", "gender", "age", "ethnicity"]:
+        if cand in cols:
+            protected_col = df.columns[cols.index(cand)]
+            break
+    if not protected_col:
+        for c in df.columns:
+            if 2 <= df[c].nunique() <= 4:
+                protected_col = c
+                break
+        if not protected_col:
+            protected_col = df.columns[0]
+
+    # 2. Label Col
+    label_col = None
+    for cand in ["income", "label", "target", "decision", "risk", "approved", "status", "recid", "outcome"]:
+        for i, c in enumerate(cols):
+            if cand in c:
+                label_col = df.columns[i]
+                break
+        if label_col: break
+    if not label_col:
+        label_col = df.columns[-1]
+        
+    # 3. Privileged val (mode)
+    priv_val = df[protected_col].mode().iloc[0]
+    
+    # 4. Favorable (max if numeric, else mode)
+    if pd.api.types.is_numeric_dtype(df[label_col]):
+        fav_val = df[label_col].max()
+    else:
+        fav_val = df[label_col].mode().iloc[0]
+        
+    return {
+        "label_col": str(label_col),
+        "protected_col": str(protected_col),
+        "privileged_val": str(priv_val) if not pd.api.types.is_numeric_dtype(df[protected_col]) else float(priv_val),
+        "favorable_val": str(fav_val) if not pd.api.types.is_numeric_dtype(df[label_col]) else float(fav_val),
+        "dataset_name": "Auto-Inferred Dataset"
+    }
+
 def load_csv_upload(filepath: str, label_col: str, protected_col: str,
                     privileged_val, favorable_val) -> BinaryLabelDataset:
     """
@@ -188,6 +235,9 @@ def load_csv_upload(filepath: str, label_col: str, protected_col: str,
                      privileged group value, favorable label value.
     """
     df = pd.read_csv(filepath)
+
+    # Clean out missing data from mapped columns
+    df = df.dropna(subset=[label_col, protected_col])
 
     # Encode protected attribute as binary (privileged=1, rest=0)
     df[protected_col] = (df[protected_col] == privileged_val).astype(int)
@@ -437,6 +487,9 @@ def run_audit(case_id: str,
         dataset = load_healthcare()
         config = CASE_CONFIG["healthcare"]
     elif case_id == "upload" and csv_path and upload_config:
+        if upload_config.get("label_col") == "auto":
+            upload_config = infer_upload_config(csv_path)
+
         dataset = load_csv_upload(
             filepath=csv_path,
             label_col=upload_config["label_col"],
@@ -447,8 +500,8 @@ def run_audit(case_id: str,
         config = {
             "name": upload_config.get("dataset_name", "Custom Upload"),
             "protected_attribute": upload_config["protected_col"],
-            "privileged_group": [{"race": 1}],
-            "unprivileged_group": [{"race": 0}],
+            "privileged_group": [{upload_config["protected_col"]: 1}],
+            "unprivileged_group": [{upload_config["protected_col"]: 0}],
             "favorable_label": 1,
             "description": "User-uploaded dataset.",
         }
@@ -462,6 +515,7 @@ def run_audit(case_id: str,
     metrics = compute_metrics(case_id, dataset, dataset_pred, config)
 
     # FairRank
+    from fairrank import compute_fairrank
     fairrank = compute_fairrank(metrics)
 
     # Counterfactual (only for named cases with known attribute index)
@@ -472,8 +526,56 @@ def run_audit(case_id: str,
         except Exception as e:
             counterfactual = {"error": str(e)}
 
-    return {
+    result = {
         **metrics,
         "fairrank": fairrank,
         "counterfactual": counterfactual,
     }
+
+    # Apply Reweighing Debiasing
+    try:
+        RW = Reweighing(unprivileged_groups=config["unprivileged_group"],
+                        privileged_groups=config["privileged_group"])
+        dataset_transf = RW.fit_transform(dataset)
+        dataset_transf_pred = train_and_predict(dataset_transf)
+        
+        debiased_metrics = compute_metrics(case_id, dataset_transf, dataset_transf_pred, config)
+        debiased_fr = compute_fairrank(debiased_metrics)
+        result["debiased_metrics"] = debiased_metrics["metrics"]
+        result["debiased_fairrank"] = debiased_fr
+
+        # Extract Row-Level Reweighting Proofs
+        orig_w = dataset.instance_weights.ravel()
+        new_w = dataset_transf.instance_weights.ravel()
+        diffs = new_w - orig_w
+        
+        sorted_indices = np.argsort(diffs)
+        penalized_idx = sorted_indices[:3] # most decreased
+        boosted_idx = sorted_indices[-3:][::-1] # most increased
+        
+        debiased_rows = {"boosted": [], "penalized": []}
+        fnames = dataset.feature_names
+        
+        for idx in boosted_idx:
+            row = {fn: float(dataset.features[idx, j]) for j, fn in enumerate(fnames)}
+            row["_weight_old"] = float(orig_w[idx])
+            row["_weight_new"] = float(new_w[idx])
+            row["_diff"] = round(float(diffs[idx]), 3)
+            # Ensure diff is actually positive. If data had 0 bias, skip
+            if row["_diff"] > 0:
+                debiased_rows["boosted"].append(row)
+
+        for idx in penalized_idx:
+            row = {fn: float(dataset.features[idx, j]) for j, fn in enumerate(fnames)}
+            row["_weight_old"] = float(orig_w[idx])
+            row["_weight_new"] = float(new_w[idx])
+            row["_diff"] = round(float(diffs[idx]), 3)
+            if row["_diff"] < 0:
+                debiased_rows["penalized"].append(row)
+                
+        result["debiased_rows"] = debiased_rows
+
+    except Exception as e:
+        print("[DEBIASING FAILED]", e)
+
+    return result

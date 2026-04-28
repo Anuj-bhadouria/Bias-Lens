@@ -1,0 +1,21 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/home/beleth/projects/biaslens/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [282628] using StatReload
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777379581.993723  282697 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+I0000 00:00:1777379582.040005  282697 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777379583.746661  282697 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+WARNING:root:No module named 'fairlearn': ExponentiatedGradientReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+WARNING:root:No module named 'inFairness': SenSeI and SenSR will be unavailable. To install, run:
+pip install 'aif360[inFairness]'
+WARNING:root:No module named 'fairlearn': GridSearchReduction will be unavailable. To install, run:
+pip install 'aif360[Reductions]'
+INFO:     Started server process [282697]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
