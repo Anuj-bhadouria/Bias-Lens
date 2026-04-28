@@ -1,0 +1,7002 @@
+[
+  {
+    "age": 41,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 60.9,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.6,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 54.4,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.7,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 62.3,
+    "label": 0
+  },
+  {
+    "age": 40,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.2,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 41.1,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.4,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.6,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.3,
+    "label": 0
+  },
+  {
+    "age": 35,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 44.5,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.5,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.1,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 56.6,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.4,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 57.8,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.7,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.2,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.0,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.9,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.3,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.7,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 63.6,
+    "label": 0
+  },
+  {
+    "age": 39,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 42.2,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 71.5,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.6,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.8,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 37.4,
+    "label": 0
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.0,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 42.3,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 66.3,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 58.4,
+    "label": 0
+  },
+  {
+    "age": 77,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 56.7,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.2,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 66.7,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.6,
+    "label": 0
+  },
+  {
+    "age": 32,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 79.2,
+    "label": 1
+  },
+  {
+    "age": 49,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 39.3,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 41.5,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 73.0,
+    "label": 1
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 38.0,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 55.2,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 58.0,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 73.9,
+    "label": 1
+  },
+  {
+    "age": 79,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.1,
+    "label": 1
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 67.8,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.3,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 34.2,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 50.1,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 54.1,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 80.8,
+    "label": 1
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 73.7,
+    "label": 1
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.9,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 80.5,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 37.5,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 67.0,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.0,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 49.5,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.6,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 45.7,
+    "label": 0
+  },
+  {
+    "age": 35,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.3,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 7,
+    "cost_avoidance_score": 99.8,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 54.5,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 82.1,
+    "label": 1
+  },
+  {
+    "age": 73,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.5,
+    "label": 0
+  },
+  {
+    "age": 91,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.7,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 66.6,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.4,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.1,
+    "label": 0
+  },
+  {
+    "age": 79,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.6,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.2,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 91.6,
+    "label": 1
+  },
+  {
+    "age": 79,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 39.6,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.9,
+    "label": 1
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 45.0,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.6,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.5,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 57.0,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.0,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 80.3,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 62.4,
+    "label": 0
+  },
+  {
+    "age": 37,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 41.4,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 70.8,
+    "label": 1
+  },
+  {
+    "age": 38,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 64.3,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 78.1,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 66.1,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.2,
+    "label": 0
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.4,
+    "label": 1
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 54.7,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.3,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.0,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 61.3,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 68.9,
+    "label": 1
+  },
+  {
+    "age": 83,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 52.0,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 64.0,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.1,
+    "label": 0
+  },
+  {
+    "age": 37,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 56.9,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.9,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 61.1,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 39.5,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 54.2,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.6,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.4,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 48.0,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 75.3,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.2,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 67.7,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 43.0,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 60.4,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 75.3,
+    "label": 1
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 82.9,
+    "label": 1
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 79.0,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 54.0,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.3,
+    "label": 1
+  },
+  {
+    "age": 77,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.2,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.4,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 53.3,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 68.7,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.7,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 67.6,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 65.6,
+    "label": 1
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 39.8,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.7,
+    "label": 1
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 40.2,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 73.2,
+    "label": 1
+  },
+  {
+    "age": 87,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.2,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 61.5,
+    "label": 0
+  },
+  {
+    "age": 84,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.0,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.7,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.9,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 45.6,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.5,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.1,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 63.7,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.7,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.1,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.6,
+    "label": 1
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.5,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 82,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 71.2,
+    "label": 1
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 75.6,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.3,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 71.0,
+    "label": 1
+  },
+  {
+    "age": 71,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 45.4,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 54.9,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 75.0,
+    "label": 1
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.8,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.4,
+    "label": 0
+  },
+  {
+    "age": 35,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 79.1,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.6,
+    "label": 0
+  },
+  {
+    "age": 39,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 76.5,
+    "label": 1
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 72.3,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.6,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.4,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.6,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 70.0,
+    "label": 1
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.5,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 69.3,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 38.8,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.1,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 76.4,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.4,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 62.0,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 43.3,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.7,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.9,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 55.2,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 54.0,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 41.3,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.5,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.6,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.4,
+    "label": 0
+  },
+  {
+    "age": 95,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.0,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 76.7,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 67.2,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.4,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.6,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 37.5,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.9,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.3,
+    "label": 0
+  },
+  {
+    "age": 79,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 80.1,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.7,
+    "label": 0
+  },
+  {
+    "age": 83,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.3,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.3,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 44.5,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 57.5,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.4,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.7,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 39.6,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 62.5,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.2,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.9,
+    "label": 0
+  },
+  {
+    "age": 32,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.7,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.9,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.5,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 38.5,
+    "label": 0
+  },
+  {
+    "age": 41,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.4,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 53.3,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.0,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 70.6,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 75.0,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.2,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 80.4,
+    "label": 1
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.6,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 66.2,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 73.1,
+    "label": 1
+  },
+  {
+    "age": 37,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.6,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.8,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.7,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 85.8,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.8,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.2,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 47.5,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 75.1,
+    "label": 1
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.2,
+    "label": 0
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.3,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.4,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 62.9,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 54.4,
+    "label": 0
+  },
+  {
+    "age": 35,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 54.3,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.5,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 55.5,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.0,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 67.0,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 77.2,
+    "label": 1
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 68.7,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 38.7,
+    "label": 0
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.9,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.0,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 60.7,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.5,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.7,
+    "label": 0
+  },
+  {
+    "age": 33,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 64.7,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.8,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 66.2,
+    "label": 1
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 89.0,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.4,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.1,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.0,
+    "label": 0
+  },
+  {
+    "age": 21,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.1,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 52.5,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 44.6,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.7,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.2,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.0,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 65.5,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 58.6,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 76.2,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 67.9,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 80.4,
+    "label": 1
+  },
+  {
+    "age": 80,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 34.7,
+    "label": 0
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.1,
+    "label": 1
+  },
+  {
+    "age": 44,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 52.2,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.7,
+    "label": 0
+  },
+  {
+    "age": 36,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 50.2,
+    "label": 0
+  },
+  {
+    "age": 82,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 61.0,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 52.7,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.1,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 73.9,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 41.1,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 53.2,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 65.6,
+    "label": 1
+  },
+  {
+    "age": 43,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.2,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 62.2,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.1,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.4,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.3,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.6,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.0,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.7,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.5,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.8,
+    "label": 1
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.0,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 80.5,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.9,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.8,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 38.4,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.7,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.5,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 81.1,
+    "label": 1
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 65.3,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 71.1,
+    "label": 1
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 38.5,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 64.5,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 68.4,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 41.0,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 54.7,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 47.0,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 78.1,
+    "label": 1
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.4,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.1,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.3,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 55.0,
+    "label": 0
+  },
+  {
+    "age": 80,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 55.0,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 55.2,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 73.1,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.2,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.7,
+    "label": 0
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 91.7,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.0,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.3,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 42.4,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.0,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 65.7,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 69.2,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 57.9,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 67.5,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 67.7,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.0,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 89.5,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 71.1,
+    "label": 1
+  },
+  {
+    "age": 45,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.3,
+    "label": 0
+  },
+  {
+    "age": 39,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.2,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 43.8,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 77.6,
+    "label": 1
+  },
+  {
+    "age": 27,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 48.5,
+    "label": 0
+  },
+  {
+    "age": 87,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.4,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.7,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.9,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 73.8,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 32.5,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.8,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.1,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.2,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.7,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 66.9,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.8,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.0,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.1,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 54.3,
+    "label": 0
+  },
+  {
+    "age": 90,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 64.0,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.7,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.7,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 60.5,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.4,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.8,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 58.9,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 72.7,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 49.1,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.0,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 39.4,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.1,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 70.4,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.8,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.8,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.5,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 43.2,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 52.5,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.6,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 67.2,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 69.7,
+    "label": 1
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 86.0,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.1,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.0,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 8,
+    "cost_avoidance_score": 77.9,
+    "label": 1
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 65.0,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.0,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.9,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.1,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 66.0,
+    "label": 1
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.8,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.5,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 39.6,
+    "label": 0
+  },
+  {
+    "age": 38,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 57.4,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 70.0,
+    "label": 1
+  },
+  {
+    "age": 77,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 64.0,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 71.4,
+    "label": 1
+  },
+  {
+    "age": 46,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 41.9,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 69.3,
+    "label": 1
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.0,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 89.5,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.0,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.5,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.9,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 60.2,
+    "label": 0
+  },
+  {
+    "age": 89,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.1,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.1,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 68.9,
+    "label": 1
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 38.1,
+    "label": 0
+  },
+  {
+    "age": 91,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 74.1,
+    "label": 1
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.9,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 65.1,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 78.6,
+    "label": 1
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.8,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 55.7,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.9,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 47.4,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.5,
+    "label": 1
+  },
+  {
+    "age": 47,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.1,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.5,
+    "label": 0
+  },
+  {
+    "age": 41,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.2,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.7,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.1,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.4,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 67.4,
+    "label": 0
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 39.3,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 44.0,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 37.2,
+    "label": 0
+  },
+  {
+    "age": 31,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.3,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.7,
+    "label": 0
+  },
+  {
+    "age": 40,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.3,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 41.0,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.9,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 65.9,
+    "label": 0
+  },
+  {
+    "age": 38,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 45.1,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.3,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 83.9,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.3,
+    "label": 1
+  },
+  {
+    "age": 42,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 77.2,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 7,
+    "cost_avoidance_score": 95.0,
+    "label": 1
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 53.7,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 50.1,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.5,
+    "label": 0
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.3,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 90.7,
+    "label": 1
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.8,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 65.9,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 30.7,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.1,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.5,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.1,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 87.9,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.5,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 55.2,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 61.8,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.2,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.4,
+    "label": 1
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.8,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.5,
+    "label": 1
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 45.2,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.5,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 77.8,
+    "label": 1
+  },
+  {
+    "age": 51,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.0,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.1,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 67.8,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.5,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.8,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.8,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.6,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.3,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 81.0,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.8,
+    "label": 0
+  },
+  {
+    "age": 35,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 39.6,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 56.6,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.4,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.0,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.2,
+    "label": 0
+  },
+  {
+    "age": 92,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.6,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.2,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 56.3,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 67.7,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 46.6,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.9,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.4,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 65.1,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 69.0,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.4,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.6,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 86.0,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 69.3,
+    "label": 1
+  },
+  {
+    "age": 47,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 55.2,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 66.9,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 44.5,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 38.8,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 60.8,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.3,
+    "label": 0
+  },
+  {
+    "age": 40,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 64.4,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 54.0,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.0,
+    "label": 1
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.0,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 67.9,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 65.9,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.8,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 66.9,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.4,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 35.9,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.1,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.2,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 88.9,
+    "label": 1
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.2,
+    "label": 1
+  },
+  {
+    "age": 36,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 77.7,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.4,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 80.4,
+    "label": 1
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.0,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 68.1,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.7,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.5,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 59.1,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.3,
+    "label": 0
+  },
+  {
+    "age": 89,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 73.6,
+    "label": 1
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 65.9,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.9,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.2,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 95.0,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.4,
+    "label": 1
+  },
+  {
+    "age": 72,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.8,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 67.7,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.9,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 73.6,
+    "label": 1
+  },
+  {
+    "age": 39,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.8,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.4,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.8,
+    "label": 1
+  },
+  {
+    "age": 36,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 70.9,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.8,
+    "label": 0
+  },
+  {
+    "age": 91,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 66.0,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.6,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.7,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 54.5,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 81.8,
+    "label": 1
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.8,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.0,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.9,
+    "label": 0
+  },
+  {
+    "age": 39,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 64.2,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.4,
+    "label": 1
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 52.8,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.1,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.6,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 66.8,
+    "label": 1
+  },
+  {
+    "age": 51,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.1,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.1,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 62.4,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 49.0,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 66.3,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.0,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.8,
+    "label": 0
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.9,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 75.8,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.6,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 70.3,
+    "label": 1
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 87.3,
+    "label": 1
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 64.0,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.3,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 38.9,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 61.7,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 32.1,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.1,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.9,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 61.7,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 63.1,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 48.6,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 70.4,
+    "label": 1
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 70.3,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 45.7,
+    "label": 0
+  },
+  {
+    "age": 80,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.5,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.7,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.1,
+    "label": 0
+  },
+  {
+    "age": 79,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.8,
+    "label": 1
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.8,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.4,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.9,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 46.7,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.0,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.1,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 52.3,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 55.7,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.3,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 8,
+    "cost_avoidance_score": 79.5,
+    "label": 1
+  },
+  {
+    "age": 32,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 80.7,
+    "label": 1
+  },
+  {
+    "age": 44,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.5,
+    "label": 1
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 64.0,
+    "label": 1
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.2,
+    "label": 1
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 77.5,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.6,
+    "label": 0
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.7,
+    "label": 0
+  },
+  {
+    "age": 40,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.0,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.9,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 66.1,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 69.1,
+    "label": 1
+  },
+  {
+    "age": 30,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.8,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.9,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.5,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.9,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.8,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.9,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.6,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 64.9,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.4,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 35.7,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.1,
+    "label": 1
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 66.1,
+    "label": 1
+  },
+  {
+    "age": 37,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.5,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 58.3,
+    "label": 1
+  },
+  {
+    "age": 72,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 47.4,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.6,
+    "label": 0
+  },
+  {
+    "age": 82,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 65.0,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 51.0,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 49.0,
+    "label": 0
+  },
+  {
+    "age": 79,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.9,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.8,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.5,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.0,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 80.3,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.0,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 46.1,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.1,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.8,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.7,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.2,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.1,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 48.9,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 61.2,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 81.0,
+    "label": 1
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 71.6,
+    "label": 1
+  },
+  {
+    "age": 35,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 45.7,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.5,
+    "label": 0
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.0,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 50.6,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 54.5,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.7,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 72.0,
+    "label": 1
+  },
+  {
+    "age": 45,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 66.2,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 38.3,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.1,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.4,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.0,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 69.3,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.1,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.4,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 57.0,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.9,
+    "label": 1
+  },
+  {
+    "age": 80,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.9,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.6,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 60.4,
+    "label": 1
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 67.1,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 71.4,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.9,
+    "label": 0
+  },
+  {
+    "age": 87,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 79.9,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.4,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.0,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.0,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.5,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.1,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 68.9,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 47.1,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 70.7,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 61.8,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 63.7,
+    "label": 0
+  },
+  {
+    "age": 39,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 76.1,
+    "label": 1
+  },
+  {
+    "age": 38,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.5,
+    "label": 1
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 82.4,
+    "label": 1
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 78.5,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 68.7,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 70.9,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.4,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.0,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.6,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.1,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.0,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 39.6,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 62.2,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 63.1,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.9,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.0,
+    "label": 1
+  },
+  {
+    "age": 78,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.9,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 44.0,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 71.8,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.5,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.1,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 57.2,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 45.9,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 75.6,
+    "label": 1
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 57.8,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 35.4,
+    "label": 0
+  },
+  {
+    "age": 47,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 38.8,
+    "label": 0
+  },
+  {
+    "age": 82,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.7,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 60.2,
+    "label": 0
+  },
+  {
+    "age": 93,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.7,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 67.0,
+    "label": 0
+  },
+  {
+    "age": 40,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 76.9,
+    "label": 1
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.0,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 55.1,
+    "label": 0
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 64.5,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.1,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.2,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 61.5,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 62.8,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 65.1,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 77.7,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.9,
+    "label": 0
+  },
+  {
+    "age": 82,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.7,
+    "label": 0
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 54.3,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 37.3,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.1,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.3,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.1,
+    "label": 1
+  },
+  {
+    "age": 41,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 65.0,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 72.9,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.0,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.9,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.2,
+    "label": 0
+  },
+  {
+    "age": 41,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 70.9,
+    "label": 1
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.9,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.9,
+    "label": 1
+  },
+  {
+    "age": 78,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 0,
+    "comorbidities": 9,
+    "cost_avoidance_score": 84.1,
+    "label": 1
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 45.3,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 55.5,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 93.8,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 61.6,
+    "label": 0
+  },
+  {
+    "age": 40,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.7,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 58.8,
+    "label": 0
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.7,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.7,
+    "label": 0
+  },
+  {
+    "age": 92,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 77.2,
+    "label": 1
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 67.9,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.5,
+    "label": 1
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.0,
+    "label": 0
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.2,
+    "label": 0
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 32.9,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 75.7,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.4,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.6,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 64.7,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.7,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 39.9,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.3,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.5,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 63.1,
+    "label": 0
+  },
+  {
+    "age": 93,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 51.2,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.4,
+    "label": 0
+  },
+  {
+    "age": 41,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 69.4,
+    "label": 1
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.7,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 50.0,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 71.9,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.0,
+    "label": 0
+  },
+  {
+    "age": 39,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.8,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.9,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.8,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 48.8,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 69.4,
+    "label": 1
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 47,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.0,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.3,
+    "label": 0
+  },
+  {
+    "age": 93,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.6,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.0,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 72.4,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 41.3,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.0,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.7,
+    "label": 0
+  },
+  {
+    "age": 80,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 73.7,
+    "label": 1
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 64.9,
+    "label": 1
+  },
+  {
+    "age": 48,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 43.2,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 74.3,
+    "label": 1
+  },
+  {
+    "age": 40,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.2,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.7,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.6,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 70.2,
+    "label": 1
+  },
+  {
+    "age": 42,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 66.1,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.7,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 83.5,
+    "label": 1
+  },
+  {
+    "age": 27,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 34.9,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.7,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 61.7,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 52.1,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.9,
+    "label": 0
+  },
+  {
+    "age": 87,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 56.8,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 47.0,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.2,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 68.5,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 64.5,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 61.6,
+    "label": 1
+  },
+  {
+    "age": 38,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 62.7,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.0,
+    "label": 1
+  },
+  {
+    "age": 80,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 75.5,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.0,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.6,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 26,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 50.0,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 66.0,
+    "label": 0
+  },
+  {
+    "age": 79,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 36.0,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.7,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.1,
+    "label": 1
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 48.3,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 58.1,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 76.4,
+    "label": 1
+  },
+  {
+    "age": 47,
+    "race": 0,
+    "comorbidities": 10,
+    "cost_avoidance_score": 87.2,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.7,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 7,
+    "cost_avoidance_score": 90.9,
+    "label": 1
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 67.9,
+    "label": 1
+  },
+  {
+    "age": 43,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.7,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.2,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 68.2,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 77.3,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 53.1,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 77.8,
+    "label": 1
+  },
+  {
+    "age": 89,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.3,
+    "label": 0
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.9,
+    "label": 0
+  },
+  {
+    "age": 42,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.7,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.3,
+    "label": 1
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 73.7,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 77.8,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 74.0,
+    "label": 1
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.3,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.3,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.9,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 67.4,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 68.8,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.2,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 43.4,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 48.1,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.2,
+    "label": 0
+  },
+  {
+    "age": 26,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 43.0,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 76.6,
+    "label": 1
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.1,
+    "label": 0
+  },
+  {
+    "age": 33,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.8,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 82.3,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 75.0,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 43.3,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.9,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 68.4,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.6,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 67.4,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.9,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 71.0,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 89.9,
+    "label": 1
+  },
+  {
+    "age": 50,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.4,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.5,
+    "label": 0
+  },
+  {
+    "age": 31,
+    "race": 0,
+    "comorbidities": 10,
+    "cost_avoidance_score": 91.4,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 70.4,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 79.0,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.1,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.9,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 43.3,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 64.9,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 66.5,
+    "label": 1
+  },
+  {
+    "age": 95,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 64.6,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.2,
+    "label": 0
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 71.4,
+    "label": 1
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 74.0,
+    "label": 1
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.2,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.3,
+    "label": 0
+  },
+  {
+    "age": 44,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.5,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 45.8,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 70.3,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 71.6,
+    "label": 1
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 34.4,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.4,
+    "label": 0
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 68.6,
+    "label": 1
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 46.2,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 9,
+    "cost_avoidance_score": 100.0,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.3,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.1,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 57.4,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.6,
+    "label": 0
+  },
+  {
+    "age": 78,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 41.6,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 63.1,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 55.4,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 41.8,
+    "label": 0
+  },
+  {
+    "age": 86,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.4,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 52.7,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 76.9,
+    "label": 1
+  },
+  {
+    "age": 78,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 65.7,
+    "label": 1
+  },
+  {
+    "age": 61,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 75.2,
+    "label": 1
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 67.6,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 45.3,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 55.1,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.6,
+    "label": 0
+  },
+  {
+    "age": 41,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 61.7,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.4,
+    "label": 0
+  },
+  {
+    "age": 93,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 76.0,
+    "label": 1
+  },
+  {
+    "age": 47,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 61.0,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.9,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.6,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.3,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 44.9,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.6,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.9,
+    "label": 0
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 65.1,
+    "label": 1
+  },
+  {
+    "age": 60,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 58.7,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.2,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.4,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 46.1,
+    "label": 0
+  },
+  {
+    "age": 46,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.5,
+    "label": 0
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.4,
+    "label": 0
+  },
+  {
+    "age": 41,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.0,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 44.5,
+    "label": 0
+  },
+  {
+    "age": 43,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 69.3,
+    "label": 1
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 49.2,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 55.5,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.3,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 40.6,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.6,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 38.0,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.7,
+    "label": 0
+  },
+  {
+    "age": 34,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 58.3,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 49.4,
+    "label": 0
+  },
+  {
+    "age": 80,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 73.0,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 68.4,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 53.3,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 59.6,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 81.1,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 61.8,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 44.9,
+    "label": 0
+  },
+  {
+    "age": 47,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 55.0,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 78.5,
+    "label": 1
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.3,
+    "label": 0
+  },
+  {
+    "age": 39,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.1,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 0,
+    "comorbidities": 8,
+    "cost_avoidance_score": 84.2,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 76.6,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 57.3,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.2,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.0,
+    "label": 0
+  },
+  {
+    "age": 45,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.8,
+    "label": 0
+  },
+  {
+    "age": 63,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 43.3,
+    "label": 0
+  },
+  {
+    "age": 85,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 74.1,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 25.1,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.1,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 6,
+    "cost_avoidance_score": 91.4,
+    "label": 1
+  },
+  {
+    "age": 73,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 51.5,
+    "label": 0
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 55.9,
+    "label": 0
+  },
+  {
+    "age": 67,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 50.5,
+    "label": 0
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 45.6,
+    "label": 0
+  },
+  {
+    "age": 75,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 63.9,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 48.3,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 72.4,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.9,
+    "label": 0
+  },
+  {
+    "age": 84,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.5,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.2,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 67.5,
+    "label": 1
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 40.2,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.3,
+    "label": 0
+  },
+  {
+    "age": 35,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 56.4,
+    "label": 0
+  },
+  {
+    "age": 72,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 35.5,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.4,
+    "label": 0
+  },
+  {
+    "age": 32,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 71.9,
+    "label": 1
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 1,
+    "cost_avoidance_score": 33.3,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 77.5,
+    "label": 1
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 58.0,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 49.2,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 69.7,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.0,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 7,
+    "cost_avoidance_score": 94.1,
+    "label": 1
+  },
+  {
+    "age": 69,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.1,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 63.1,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 54.0,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 64.5,
+    "label": 0
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 73.0,
+    "label": 1
+  },
+  {
+    "age": 66,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 59.3,
+    "label": 0
+  },
+  {
+    "age": 84,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 32.5,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 46.0,
+    "label": 0
+  },
+  {
+    "age": 57,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 62.5,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 76.6,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 1,
+    "comorbidities": 5,
+    "cost_avoidance_score": 76.5,
+    "label": 1
+  },
+  {
+    "age": 71,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 58.5,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 48.6,
+    "label": 0
+  },
+  {
+    "age": 49,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 60.6,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 67.2,
+    "label": 0
+  },
+  {
+    "age": 76,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 70.6,
+    "label": 1
+  },
+  {
+    "age": 82,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.6,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 0,
+    "comorbidities": 6,
+    "cost_avoidance_score": 75.4,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 68.1,
+    "label": 1
+  },
+  {
+    "age": 58,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 47.7,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 61.3,
+    "label": 0
+  },
+  {
+    "age": 27,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 49.7,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 59.6,
+    "label": 0
+  },
+  {
+    "age": 73,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 68.6,
+    "label": 1
+  },
+  {
+    "age": 44,
+    "race": 0,
+    "comorbidities": 0,
+    "cost_avoidance_score": 39.4,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 57.4,
+    "label": 0
+  },
+  {
+    "age": 74,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.7,
+    "label": 0
+  },
+  {
+    "age": 29,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.1,
+    "label": 0
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 72.2,
+    "label": 1
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 42.6,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 0,
+    "comorbidities": 7,
+    "cost_avoidance_score": 71.3,
+    "label": 1
+  },
+  {
+    "age": 57,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 53.3,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.5,
+    "label": 0
+  },
+  {
+    "age": 60,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 55.7,
+    "label": 0
+  },
+  {
+    "age": 48,
+    "race": 0,
+    "comorbidities": 4,
+    "cost_avoidance_score": 51.9,
+    "label": 0
+  },
+  {
+    "age": 81,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 70.8,
+    "label": 1
+  },
+  {
+    "age": 77,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.3,
+    "label": 0
+  },
+  {
+    "age": 65,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 65.6,
+    "label": 1
+  },
+  {
+    "age": 70,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 55.4,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 56.1,
+    "label": 0
+  },
+  {
+    "age": 50,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 57.9,
+    "label": 1
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 0,
+    "cost_avoidance_score": 31.5,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 71.6,
+    "label": 1
+  },
+  {
+    "age": 88,
+    "race": 1,
+    "comorbidities": 1,
+    "cost_avoidance_score": 52.1,
+    "label": 0
+  },
+  {
+    "age": 59,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 60.7,
+    "label": 0
+  },
+  {
+    "age": 51,
+    "race": 0,
+    "comorbidities": 3,
+    "cost_avoidance_score": 46.7,
+    "label": 0
+  },
+  {
+    "age": 68,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 61.3,
+    "label": 0
+  },
+  {
+    "age": 62,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 46.1,
+    "label": 0
+  },
+  {
+    "age": 82,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 53.5,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 64.4,
+    "label": 0
+  },
+  {
+    "age": 64,
+    "race": 1,
+    "comorbidities": 4,
+    "cost_avoidance_score": 70.4,
+    "label": 0
+  },
+  {
+    "age": 52,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 50.8,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 0,
+    "comorbidities": 5,
+    "cost_avoidance_score": 61.3,
+    "label": 0
+  },
+  {
+    "age": 54,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.6,
+    "label": 0
+  },
+  {
+    "age": 55,
+    "race": 0,
+    "comorbidities": 2,
+    "cost_avoidance_score": 44.3,
+    "label": 0
+  },
+  {
+    "age": 56,
+    "race": 1,
+    "comorbidities": 3,
+    "cost_avoidance_score": 62.7,
+    "label": 0
+  },
+  {
+    "age": 53,
+    "race": 1,
+    "comorbidities": 2,
+    "cost_avoidance_score": 56.6,
+    "label": 0
+  }
+]

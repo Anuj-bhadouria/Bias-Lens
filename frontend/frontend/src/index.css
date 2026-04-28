@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@800&family=Space+Grotesk:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #080808;
+  color: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-manrope { font-family: 'Manrope', sans-serif; }
+.font-space { font-family: 'Space Grotesk', sans-serif; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
