@@ -76,7 +76,7 @@ export default function TextBias() {
     if (!text.trim()) return;
     setLoading(true); setError(null); setResult(null);
     try {
-      const res = await fetch("http://localhost:8000/analyze/text", {
+      const res = await fetch("/api/analyze/text", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text })

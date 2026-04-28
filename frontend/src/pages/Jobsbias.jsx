@@ -259,7 +259,7 @@ export default function JobsBias() {
     setJobs(null);
     setError(null);
     try {
-      const res = await fetch(`http://localhost:8000/jobs/bias?query=${encodeURIComponent(query)}&country=${country}&n=10`);
+      const res = await fetch(`/api/jobs/bias?query=${encodeURIComponent(query)}&country=${country}&n=10`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       setJobs(Array.isArray(data) ? data : data.jobs ?? []);

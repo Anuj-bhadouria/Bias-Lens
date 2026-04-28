@@ -211,7 +211,7 @@ export default function Home() {
   const [cases, setCases] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/cases")
+    fetch("/api/cases")
       .then((r) => r.json())
       .then((data) => {
         const mappedCases = (data.cases || []).map(c => ({

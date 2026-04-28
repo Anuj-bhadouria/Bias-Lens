@@ -282,7 +282,7 @@ function GeminiChat({ caseId }) {
     setMsgs(m => [...m, { role: "user", text: msg }]);
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/chat", {
+      const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ case_id: caseId, message: msg, audit_context: null })
@@ -492,7 +492,7 @@ export default function CaseAudit() {
 
   useEffect(() => {
     setLoading(true); setError(null); setData(null);
-    fetch(`http://localhost:8000/audit/${caseId}`)
+    fetch(`/api/audit/${caseId}`)
       .then(r => r.json())
       .then(d => { setData(d); setLoading(false); })
       .catch(() => { setError("Failed to load audit."); setLoading(false); });

@@ -101,7 +101,7 @@ export default function ComplianceReport({ caseId }) {
     useEffect(() => {
         setLoading(true);
         setError(null);
-        fetch(`http://localhost:8000/compliance/${caseId}`)
+        fetch(`/api/compliance/${caseId}`)
             .then((r) => {
                 if (!r.ok) throw new Error(`HTTP ${r.status}`);
                 return r.json();

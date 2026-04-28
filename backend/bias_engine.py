@@ -16,6 +16,26 @@ from aif360.algorithms.preprocessing import Reweighing
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
+import math
+
+
+# ---------------------------------------------------------------------------
+# HELPERS
+# ---------------------------------------------------------------------------
+
+def _safe_float(v, fallback: float = 0.0) -> float:
+    """Convert AIF360 scalar to Python float, mapping NaN/Inf → fallback.
+    This prevents json.dumps from crashing when AIF360 produces division-by-zero.
+    """
+    try:
+        result = float(v)
+        if math.isnan(result) or math.isinf(result):
+            return fallback
+        return result
+    except (TypeError, ValueError):
+        return fallback
+
+
 # AIF360 raw data paths (standard install location)
 import aif360
 _AIF360_DATA = Path(aif360.__file__).parent / "data" / "raw"
@@ -184,7 +204,7 @@ def load_healthcare() -> BinaryLabelDataset:
 def infer_upload_config(filepath: str) -> dict:
     df = pd.read_csv(filepath)
     cols = [str(c).lower() for c in df.columns]
-    
+
     # 1. Protected Col
     protected_col = None
     for cand in ["race", "sex", "gender", "age", "ethnicity"]:
@@ -206,25 +226,28 @@ def infer_upload_config(filepath: str) -> dict:
             if cand in c:
                 label_col = df.columns[i]
                 break
-        if label_col: break
+        if label_col:
+            break
     if not label_col:
         label_col = df.columns[-1]
-        
-    # 3. Privileged val (mode)
+
+    # 3. Privileged val — keep native Python type so == comparison works in load_csv_upload
     priv_val = df[protected_col].mode().iloc[0]
-    
-    # 4. Favorable (max if numeric, else mode)
+    priv_val = priv_val.item() if hasattr(priv_val, 'item') else priv_val
+
+    # 4. Favorable val — max for numeric cols, mode for string cols
     if pd.api.types.is_numeric_dtype(df[label_col]):
         fav_val = df[label_col].max()
     else:
         fav_val = df[label_col].mode().iloc[0]
-        
+    fav_val = fav_val.item() if hasattr(fav_val, 'item') else fav_val
+
     return {
         "label_col": str(label_col),
         "protected_col": str(protected_col),
-        "privileged_val": str(priv_val) if not pd.api.types.is_numeric_dtype(df[protected_col]) else float(priv_val),
-        "favorable_val": str(fav_val) if not pd.api.types.is_numeric_dtype(df[label_col]) else float(fav_val),
-        "dataset_name": "Auto-Inferred Dataset"
+        "privileged_val": priv_val,
+        "favorable_val": fav_val,
+        "dataset_name": "Auto-Inferred Dataset",
     }
 
 def load_csv_upload(filepath: str, label_col: str, protected_col: str,
@@ -236,21 +259,46 @@ def load_csv_upload(filepath: str, label_col: str, protected_col: str,
     """
     df = pd.read_csv(filepath)
 
-    # Clean out missing data from mapped columns
+    # Drop rows with missing values in the key columns
     df = df.dropna(subset=[label_col, protected_col])
 
+    # Coerce privileged_val to match the actual dtype of the column so == works
+    col_dtype = df[protected_col].dtype
+    if pd.api.types.is_numeric_dtype(col_dtype):
+        try:
+            privileged_val = type(df[protected_col].iloc[0])(privileged_val)
+        except (ValueError, TypeError):
+            privileged_val = float(privileged_val)
+
+    label_dtype = df[label_col].dtype
+    if pd.api.types.is_numeric_dtype(label_dtype):
+        try:
+            favorable_val = type(df[label_col].iloc[0])(favorable_val)
+        except (ValueError, TypeError):
+            favorable_val = float(favorable_val)
+
     # Encode protected attribute as binary (privileged=1, rest=0)
-    df[protected_col] = (df[protected_col] == privileged_val).astype(int)
+    df[protected_col] = (df[protected_col] == privileged_val).astype(np.float64)
 
     # Encode label as binary (favorable=1, rest=0)
-    df[label_col] = (df[label_col] == favorable_val).astype(int)
+    df[label_col] = (df[label_col] == favorable_val).astype(np.float64)
+
+    # Drop any remaining non-numeric columns — AIF360 cannot handle object dtype
+    numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+    # Always keep the key columns even if they somehow slipped through
+    keep = list(dict.fromkeys([protected_col, label_col] +
+                              [c for c in numeric_cols if c not in (protected_col, label_col)]))
+    df = df[keep]
+
+    # Final coerce to float64 and drop any remaining NaNs
+    df = df.apply(pd.to_numeric, errors='coerce').dropna().astype(np.float64)
 
     ds = BinaryLabelDataset(
         df=df,
         label_names=[label_col],
         protected_attribute_names=[protected_col],
-        favorable_label=1,
-        unfavorable_label=0,
+        favorable_label=1.0,
+        unfavorable_label=0.0,
     )
     return ds
 
@@ -302,8 +350,8 @@ def compute_metrics(case_id: str,
         unprivileged_groups=unpriv,
     )
 
-    dpd = float(ds_metric.mean_difference())          # Demographic Parity Difference
-    di = float(ds_metric.disparate_impact())           # Disparate Impact ratio
+    dpd = _safe_float(ds_metric.mean_difference())    # Demographic Parity Difference
+    di  = _safe_float(ds_metric.disparate_impact(), fallback=1.0)  # Disparate Impact ratio (1.0 = neutral)
 
     # Classification metrics (needs model predictions)
     clf_metric = ClassificationMetric(
@@ -313,22 +361,16 @@ def compute_metrics(case_id: str,
         unprivileged_groups=unpriv,
     )
 
-    eod = float(clf_metric.equalized_odds_difference())
-    fpr_gap = float(
-        clf_metric.difference(clf_metric.false_positive_rate)
-    )
-    tpr_priv = float(clf_metric.true_positive_rate(privileged=True))
-    tpr_unpriv = float(clf_metric.true_positive_rate(privileged=False))
-    fpr_priv = float(clf_metric.false_positive_rate(privileged=True))
-    fpr_unpriv = float(clf_metric.false_positive_rate(privileged=False))
+    eod      = _safe_float(clf_metric.equalized_odds_difference())
+    fpr_gap  = _safe_float(clf_metric.difference(clf_metric.false_positive_rate))
+    tpr_priv   = _safe_float(clf_metric.true_positive_rate(privileged=True))
+    tpr_unpriv = _safe_float(clf_metric.true_positive_rate(privileged=False))
+    fpr_priv   = _safe_float(clf_metric.false_positive_rate(privileged=True))
+    fpr_unpriv = _safe_float(clf_metric.false_positive_rate(privileged=False))
 
     # Group-level favorable outcome rates
-    priv_rate = float(
-        clf_metric.selection_rate(privileged=True)
-    )
-    unpriv_rate = float(
-        clf_metric.selection_rate(privileged=False)
-    )
+    priv_rate   = _safe_float(clf_metric.selection_rate(privileged=True))
+    unpriv_rate = _safe_float(clf_metric.selection_rate(privileged=False))
 
     return {
         "case_id": case_id,
@@ -417,13 +459,14 @@ def compute_fairrank(metrics: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def compute_counterfactual(case_id: str, dataset: BinaryLabelDataset,
-                            dataset_pred: BinaryLabelDataset) -> dict:
+                            dataset_pred: BinaryLabelDataset,
+                            config: Optional[dict] = None) -> dict:
     """
     Flip protected attribute for ALL samples, re-predict,
     compute approval rate delta.
     Returns: original_approval_rate, flipped_approval_rate, delta.
     """
-    cfg = CASE_CONFIG[case_id]
+    cfg = config if config is not None else CASE_CONFIG[case_id]
     attr = cfg["protected_attribute"]
 
     # Find index of protected attribute
@@ -518,13 +561,12 @@ def run_audit(case_id: str,
     from fairrank import compute_fairrank
     fairrank = compute_fairrank(metrics)
 
-    # Counterfactual (only for named cases with known attribute index)
+    # Counterfactual — works for both named cases and uploads
     counterfactual = None
-    if case_id in CASE_CONFIG:
-        try:
-            counterfactual = compute_counterfactual(case_id, dataset, dataset_pred)
-        except Exception as e:
-            counterfactual = {"error": str(e)}
+    try:
+        counterfactual = compute_counterfactual(case_id, dataset, dataset_pred, config=config)
+    except Exception as e:
+        counterfactual = {"error": str(e)}
 
     result = {
         **metrics,

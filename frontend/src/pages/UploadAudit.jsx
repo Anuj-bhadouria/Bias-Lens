@@ -154,29 +154,20 @@ export default function UploadAudit() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
 
-  const onDrop = useCallback((e) => {
-    e.preventDefault(); setDragging(false);
-    const f = e.dataTransfer?.files?.[0] ?? e.target.files?.[0];
-    if (f?.name.endsWith('.csv')) {
-      setFile(f);
-      runAudit(f);
-    }
-  }, []);
-
-  const runAudit = async (attachedFile) => {
-    setStep(1); // Auto running state
-    setLoading(true); setError(null);
+  const runAudit = useCallback(async (attachedFile) => {
+    setStep(1);
+    setLoading(true);
+    setError(null);
     try {
       const fd = new FormData();
       fd.append('file', attachedFile);
-      // Backend bias_engine.py auto_infer_config will trigger on 'auto'
       fd.append('label_col', 'auto');
       fd.append('protected_col', 'auto');
       fd.append('privileged_val', 'auto');
       fd.append('favorable_val', 'auto');
       fd.append('dataset_name', attachedFile.name);
 
-      const res = await fetch('http://localhost:8000/audit/upload', { method: 'POST', body: fd });
+      const res = await fetch('/api/audit/upload', { method: 'POST', body: fd });
       if (!res.ok) {
         const err = await res.json().catch(() => ({}));
         throw new Error(err.detail ?? `HTTP ${res.status}`);
@@ -186,9 +177,20 @@ export default function UploadAudit() {
     } catch (e) {
       setError(e.message);
       setStep(0);
+    } finally {
+      setLoading(false);
     }
-    finally { setLoading(false); }
-  };
+  }, []);
+
+  const onDrop = useCallback((e) => {
+    e.preventDefault();
+    setDragging(false);
+    const f = e.dataTransfer?.files?.[0] ?? e.target.files?.[0];
+    if (f?.name.endsWith('.csv')) {
+      setFile(f);
+      runAudit(f);
+    }
+  }, [runAudit]);
 
   const reset = () => { setStep(0); setFile(null); setResult(null); setError(null); setConfig({ label: '', sensitive: '', privileged: '', favorable: '' }); };
   const canRun = config.label && config.sensitive && config.privileged && config.favorable;
@@ -223,6 +225,12 @@ export default function UploadAudit() {
 
           {step === 0 && (
             <motion.div key="step0" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}>
+              {error && (
+                <div className="mb-4 px-5 py-3 rounded-2xl border border-[#7f1d1d] bg-[#450a0a] text-[#f87171] font-['Inter'] text-sm flex items-center gap-2">
+                  <XCircle size={15} className="shrink-0" />
+                  <span>{error}</span>
+                </div>
+              )}
               <div onClick={() => fileRef.current?.click()}
                 onDrop={onDrop} onDragOver={e => { e.preventDefault(); setDragging(true); }} onDragLeave={() => setDragging(false)}
                 className={`relative rounded-3xl border-2 border-dashed cursor-pointer transition-all duration-300 p-16 text-center
