@@ -1,0 +1,64 @@
+{
+  "case_id": "healthcare",
+  "name": "Healthcare Risk Algorithm",
+  "description": "A commercial algorithm used by US hospitals to allocate additional care resources to patients. Studied by Obermeyer et al. (2019), it was found to systematically underestimate the health needs of Black patients.",
+  "dataset": "Optum Labs retrospective EHR data (~200M patient records)",
+  "sensitive_attribute": "race",
+  "privileged_group": "White patients",
+  "unprivileged_group": "Black patients",
+  "label": "Eligible for high-risk care management program",
+  "year": 2019,
+  "source": "Obermeyer et al., Science 2019 — 'Dissecting racial bias in an algorithm used to manage the health of populations'",
+
+  "fairrank_score": 28,
+  "fairrank_color": "red",
+
+  "metrics": {
+    "demographic_parity_difference": -0.418,
+    "equalized_odds_difference": 0.31,
+    "disparate_impact": 0.51,
+    "false_negative_rate_gap": 0.38,
+    "false_positive_rate_gap": -0.09,
+    "mean_predicted_risk_black": 0.44,
+    "mean_predicted_risk_white": 0.57,
+    "notes": "At the same predicted risk score, Black patients were significantly sicker than White patients — algorithm used cost as a proxy for health need, but unequal access to care suppressed costs for Black patients."
+  },
+
+  "penalties": {
+    "demographic_parity": 30,
+    "equalized_odds": 25,
+    "disparate_impact": 25,
+    "false_positive_rate": 0
+  },
+
+  "bias_genealogy": [
+    {
+      "stage": "Proxy Choice",
+      "bias": "Algorithm used healthcare cost as proxy for health need",
+      "impact": "High — cost reflects access to care, not actual illness severity"
+    },
+    {
+      "stage": "Training Data",
+      "bias": "Historical cost data encodes systemic underutilization by Black patients",
+      "impact": "High — model learns that Black patients 'need less care'"
+    },
+    {
+      "stage": "Label Encoding",
+      "bias": "Lower spending labeled as lower need",
+      "impact": "High — false equivalence between utilization and need"
+    },
+    {
+      "stage": "Deployment",
+      "bias": "Score used to gate enrollment in care management programs",
+      "impact": "Critical — Black patients 40% less likely to be referred at same risk score"
+    }
+  ],
+
+  "counterfactual": {
+    "question": "Would a Black patient with the same health conditions receive the same risk score as a White patient?",
+    "answer": "No. At identical health status (measured by active chronic conditions), Black patients received lower risk scores — because they historically incurred lower costs due to reduced access to care.",
+    "magnitude": "To be referred at the same rate as White patients, Black patients would need to be considerably sicker."
+  },
+
+  "gemini_context": "This is a real healthcare AI bias case studied in Science (2019). The algorithm by Optum was used across hundreds of US hospitals. It used predicted healthcare cost as a proxy for health need. Because Black patients historically had less access to care, they spent less — so the algorithm systematically underestimated their needs. At the same risk score, Black patients had significantly more chronic conditions than White patients. Researchers estimated this bias reduced the fraction of Black patients receiving additional care by more than half."
+}
