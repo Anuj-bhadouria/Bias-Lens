@@ -2,6 +2,9 @@ import { useState, useRef } from "react";
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ScanText, Loader2, CheckCircle, AlertCircle } from "lucide-react";
+const BASE_URL = import.meta.env.VITE_API_URL ?? '/api';
+
+
 
 const FontLink = () => (
   <style>{`@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap');`}</style>
@@ -76,7 +79,7 @@ export default function TextBias() {
     if (!text.trim()) return;
     setLoading(true); setError(null); setResult(null);
     try {
-      const res = await fetch("/api/analyze/text", {
+      const res = await fetch(`${BASE_URL}/text-bias`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text })

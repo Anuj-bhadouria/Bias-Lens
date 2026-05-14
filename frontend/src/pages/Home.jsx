@@ -134,7 +134,6 @@ function Nav() {
             { label: "Features", to: "/#features" },
             { label: "Upload", to: "/upload" },
             { label: "Text Analysis", to: "/text" },
-            { label: "Jobs", to: "/jobs" },
           ].map((l) => (
             <Link
               key={l.label}
@@ -209,9 +208,11 @@ const FEATURES = [
 // ── MAIN ──────────────────────────────────────────────────────────────────────
 export default function Home() {
   const [cases, setCases] = useState([]);
+  const BASE_URL = import.meta.env.VITE_API_URL ?? '/api';
+
 
   useEffect(() => {
-    fetch("/api/cases")
+    fetch(`${BASE_URL}/cases`)
       .then((r) => r.json())
       .then((data) => {
         const mappedCases = (data.cases || []).map(c => ({

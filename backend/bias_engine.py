@@ -38,7 +38,8 @@ def _safe_float(v, fallback: float = 0.0) -> float:
 
 # AIF360 raw data paths (standard install location)
 import aif360
-_AIF360_DATA = Path(aif360.__file__).parent / "data" / "raw"
+# _AIF360_DATA = Path(aif360.__file__).parent / "data" / "raw"
+_AIF360_DATA = Path("data")
 
 
 # ---------------------------------------------------------------------------
@@ -91,6 +92,7 @@ def load_compas() -> BinaryLabelDataset:
     Source: aif360/data/raw/compas/compas-scores-two-years.csv
     Mirrors what CompasDataset does internally.
     """
+    # csv_path = _AIF360_DATA / "compas" / "compas-scores-two-years.csv"
     csv_path = _AIF360_DATA / "compas" / "compas-scores-two-years.csv"
     df = pd.read_csv(str(csv_path), index_col=None)
 
@@ -190,7 +192,9 @@ def load_healthcare() -> BinaryLabelDataset:
     Expected columns: age, race (1=White, 0=Black), comorbidities,
                       cost_avoidance_score, label (1=referred, 0=not)
     """
-    df = pd.read_json("data/healthcare.json")
+    # df = pd.read_json("data/healthcare.json")
+    df = pd.read_json(_AIF360_DATA / "healthcare.json")
+
     ds = BinaryLabelDataset(
         df=df,
         label_names=["label"],

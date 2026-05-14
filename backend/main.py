@@ -11,6 +11,7 @@ Routes:
 """
 
 import os
+import asyncio
 import tempfile
 from typing import Optional
 
@@ -178,18 +179,17 @@ async def audit_upload(
     }
 
     try:
-        result = run_audit("upload", csv_path=tmp_path, upload_config=upload_config)
+        result = await asyncio.to_thread(
+            run_audit, "upload", tmp_path, upload_config
+        )
     except Exception as e:
         os.unlink(tmp_path)
         raise HTTPException(status_code=500, detail=str(e))
 
     os.unlink(tmp_path)
 
-    try:
-        groq = get_groq()
-        result["groq_explanation"] = groq.explain_audit(result)
-    except Exception:
-        result["groq_explanation"] = None
+    # Skip Groq for uploads — saves 3-5s and reduces timeout risk
+    result["groq_explanation"] = None
 
     return result
 
@@ -211,10 +211,10 @@ def text_bias(req: TextBiasRequest):
 
 @app.post("/chat")
 def chat(req: ChatRequest):
-    """Gemini chat endpoint. Passes audit context + user message."""
+    """Groq chat endpoint. Passes audit context + user message."""
     try:
-        gemini = get_gemini()
-        reply = gemini.chat(
+        groq = get_groq()
+        reply = groq.chat(
             case_id=req.case_id,
             message=req.message,
             audit_context=req.audit_context,

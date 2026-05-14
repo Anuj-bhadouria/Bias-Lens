@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import ComplianceReport from "./ComplianceReport";
 
+const BASE_URL = import.meta.env.VITE_API_URL ?? '/api';
+
 /* ─── Fonts ─────────────────────────────────────────────────── */
 const FontLink = () => (
   <style>{`@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap');`}</style>
@@ -282,7 +284,7 @@ function GeminiChat({ caseId }) {
     setMsgs(m => [...m, { role: "user", text: msg }]);
     setLoading(true);
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(`${BASE_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ case_id: caseId, message: msg, audit_context: null })
@@ -492,7 +494,8 @@ export default function CaseAudit() {
 
   useEffect(() => {
     setLoading(true); setError(null); setData(null);
-    fetch(`/api/audit/${caseId}`)
+    
+fetch(`${BASE_URL}/audit/${caseId}`)
       .then(r => r.json())
       .then(d => { setData(d); setLoading(false); })
       .catch(() => { setError("Failed to load audit."); setLoading(false); });

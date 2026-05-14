@@ -30,3 +30,4 @@ dist-ssr
 *.sln
 *.sw?
 >>>>>>> c5dae3d (Tier 2 Completed)
+.vercel
