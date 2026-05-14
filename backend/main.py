@@ -8,8 +8,6 @@ Routes:
   POST /text-bias               DBias text analysis
   POST /chat                    Gemini chat
   GET  /counterfactual/{case_id} counterfactual for named case
-  GET  /jobs/bias               fetch live jobs + run bias analysis
-  GET  /compliance/{case_id}    generate compliance report for named case
 """
 
 import os
@@ -43,17 +41,16 @@ app.add_middleware(
 # LAZY IMPORTS — heavy models load only when first called
 # ---------------------------------------------------------------------------
 
-_gemini = None
+_groq = None
 _text_bias = None
-_adzuna = None
 
 
-def get_gemini():
-    global _gemini
-    if _gemini is None:
+def get_groq():
+    global _groq
+    if _groq is None:
         from groq_layer import GroqLayer
-        _gemini = GroqLayer()
-    return _gemini
+        _groq = GroqLayer()
+    return _groq
 
 
 def get_text_bias():
@@ -62,14 +59,6 @@ def get_text_bias():
         from text_bias import analyze_text
         _text_bias = analyze_text
     return _text_bias
-
-
-def get_adzuna():
-    global _adzuna
-    if _adzuna is None:
-        import adzuna as _az
-        _adzuna = _az
-    return _adzuna
 
 
 # ---------------------------------------------------------------------------
@@ -105,31 +94,38 @@ def health():
 
 @app.get("/cases")
 def list_cases():
-    """Return metadata for 3 preloaded case files with dynamic fairrank score."""
-    cases = []
-    
-    # Do a lazy import of run_audit to just get the initial fairrank computations quickly
-    from bias_engine import run_audit
-
-    for cfg_id, cfg in CASE_CONFIG.items():
-        score = 0
-        try:
-            # this computes metrics locally on standard csvs very fast (<100ms)
-            res = run_audit(cfg_id)
-            score = res.get("fairrank", {}).get("score", 0)
-        except Exception:
-            pass
-            
-        cases.append({
-            "id": cfg_id,
-            "name": cfg["name"],
-            "icon": "⚖️" if cfg_id == "compas" else "💼" if cfg_id == "adult" else "🏥",
-            "tag": "CRIMINAL JUSTICE" if cfg_id == "compas" else "CENSUS MODEL" if cfg_id == "adult" else "CARE ALLOCATION",
-            "description": cfg["description"],
-            "protected_attribute": cfg["protected_attribute"],
-            "score": score
-        })
-    return {"cases": cases}
+    """Return metadata for 3 preloaded case files."""
+    return {
+        "cases": [
+            {
+                "id": "compas",
+                "name": "COMPAS Recidivism",
+                "icon": "⚖️",
+                "tag": "Criminal Justice",
+                "description": CASE_CONFIG["compas"]["description"],
+                "protected_attribute": "race",
+                "source": "ProPublica, 2016",
+            },
+            {
+                "id": "adult",
+                "name": "Adult Income",
+                "icon": "💼",
+                "tag": "Employment / Lending",
+                "description": CASE_CONFIG["adult"]["description"],
+                "protected_attribute": "sex",
+                "source": "UCI ML Repository",
+            },
+            {
+                "id": "healthcare",
+                "name": "Healthcare Allocation",
+                "icon": "🏥",
+                "tag": "Healthcare",
+                "description": CASE_CONFIG["healthcare"]["description"],
+                "protected_attribute": "race",
+                "source": "Obermeyer et al., Science 2019",
+            },
+        ]
+    }
 
 
 @app.get("/audit/{case_id}")
@@ -143,34 +139,13 @@ def audit_case(case_id: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-    # Attach Gemini fields (all optional — never fail the audit if Gemini is down)
+    # Attach Groq explanation if available
     try:
-        gemini = get_gemini()
-
-        # Plain-text explanation
-        result["gemini_explanation"] = gemini.explain_audit(result)
-
-        # Bias genealogy pipeline (list of {stage, impact, bias})
-        result["bias_genealogy"] = gemini.generate_bias_genealogy(result)
-
-        # Counterfactual Q&A — attach question + answer into the counterfactual dict
-        cf = result.get("counterfactual")
-        if cf and "error" not in cf:
-            qa = gemini.generate_counterfactual_qa(
-                case_id=case_id,
-                counterfactual=cf,
-                config=CASE_CONFIG[case_id],
-            )
-            result["counterfactual"]["question"] = qa["question"]
-            result["counterfactual"]["answer"] = qa["answer"]
-
-    except Exception as ex:
-        # Ensure the audit still returns even if Gemini calls fail
-        result.setdefault("gemini_explanation", None)
-        result.setdefault("bias_genealogy", [])
-
-    # Flatten fairrank_score to top level for convenience (keep nested too)
-    result["fairrank_score"] = result["fairrank"]["score"]
+        groq = get_groq()
+        explanation = groq.explain_audit(result)
+        result["groq_explanation"] = explanation
+    except Exception:
+        result["groq_explanation"] = None
 
     return result
 
@@ -211,26 +186,23 @@ async def audit_upload(
     os.unlink(tmp_path)
 
     try:
-        gemini = get_gemini()
-        result["gemini_explanation"] = gemini.explain_audit(result)
+        groq = get_groq()
+        result["groq_explanation"] = groq.explain_audit(result)
     except Exception:
-        result["gemini_explanation"] = None
-
-    # Flatten for frontend
-    result["fairrank_score"] = result["fairrank"]["score"]
+        result["groq_explanation"] = None
 
     return result
 
 
-@app.post("/analyze/text")
+@app.post("/text-bias")
 def text_bias(req: TextBiasRequest):
     """Run DBias on pasted text. Returns score, highlights, debiased version."""
     if not req.text.strip():
         raise HTTPException(status_code=400, detail="Text is empty.")
 
     try:
-        from text_bias import analyze_text_bias
-        result = analyze_text_bias(req.text)
+        analyze = get_text_bias()
+        result = analyze(req.text)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -253,6 +225,56 @@ def chat(req: ChatRequest):
     return {"reply": reply}
 
 
+@app.get("/compliance/{case_id}")
+def compliance_report(case_id: str):
+    """Generate a compliance report for a named case."""
+    if case_id not in CASE_CONFIG:
+        raise HTTPException(status_code=404, detail=f"Unknown case: {case_id}")
+
+    try:
+        result = run_audit(case_id)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+    fairrank = result.get("fairrank", {})
+    score = fairrank.get("score", 0)
+    label = fairrank.get("label", "Unknown")
+    case_name = result.get("case_name", CASE_CONFIG[case_id]["name"])
+
+    report_markdown = None
+    try:
+        groq = get_groq()
+        report_markdown = groq.generate_compliance_report(result)
+    except Exception:
+        report_markdown = None
+
+    if not report_markdown:
+        # Fallback static report
+        report_markdown = f"""# {case_name} — Compliance Report
+
+## Executive Summary
+FairRank Score: **{score}/100** — {label}
+
+## EU AI Act
+Under Article 10 (Data Governance) and Article 15 (Accuracy and Robustness), high-risk AI systems must demonstrate non-discriminatory data processing. The current score indicates {'compliance concerns requiring remediation' if score < 80 else 'acceptable fairness levels'}.
+
+## US EEOC — Disparate Impact
+The four-fifths rule requires the selection rate for any protected group to be ≥ 80% of the rate for the highest group. {'The measured disparate impact metric indicates a potential violation.' if result.get('metrics', {}).get('disparate_impact', 1.0) < 0.8 else 'The disparate impact metric is within acceptable bounds.'}
+
+## Recommended Remediation
+1. **Apply Reweighing**: Adjust training sample weights using AIF360 to balance outcomes.
+2. **Post-process with Equalized Odds**: Calibrate decision thresholds per group.
+3. **Establish Monitoring**: Deploy continuous fairness dashboards with alerting on drift."""
+
+    return {
+        "case_id": case_id,
+        "case_name": case_name,
+        "fairrank_score": score,
+        "fairrank_label": label,
+        "report_markdown": report_markdown,
+    }
+
+
 @app.get("/counterfactual/{case_id}")
 def counterfactual(case_id: str):
     """Return counterfactual analysis for named case."""
@@ -268,76 +290,15 @@ def counterfactual(case_id: str):
     if not cf:
         raise HTTPException(status_code=500, detail="Counterfactual computation failed.")
 
-    # Attach Gemini explanation
+    # Attach Groq explanation
     try:
-        gemini = get_gemini()
-        cf["gemini_explanation"] = gemini.explain_counterfactual(
+        groq = get_groq()
+        cf["groq_explanation"] = groq.explain_counterfactual(
             case_id=case_id,
             counterfactual=cf,
             config=CASE_CONFIG[case_id],
         )
     except Exception:
-        cf["gemini_explanation"] = None
+        cf["groq_explanation"] = None
 
     return cf
-
-
-@app.get("/jobs/bias")
-def jobs_bias(query: str = "software engineer", country: str = "us", n: int = 10):
-    """
-    Fetch live job listings from Adzuna and run text bias analysis on each.
-    Returns a flat list of jobs with bias fields at top level.
-    """
-    try:
-        az = get_adzuna()
-        result = az.analyze_jobs_bias(
-            query=query,
-            country=country,
-            results_per_page=n,
-        )
-    except EnvironmentError as e:
-        raise HTTPException(status_code=503, detail=f"Adzuna credentials missing: {e}")
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-    # Flatten each job: merge bias sub-dict fields to top level
-    flattened = []
-    for job in result.get("jobs", []):
-        bias = job.pop("bias", {}) or {}
-        flat_job = {
-            **job,
-            "bias_score": bias.get("bias_score", 0.0),
-            "biased_words": bias.get("biased_words", []),
-            "categories": bias.get("categories", []),
-            "severity": bias.get("severity", "none"),
-            "is_biased": bias.get("is_biased", False),
-        }
-        flattened.append(flat_job)
-
-    return flattened
-
-
-@app.get("/compliance/{case_id}")
-def compliance_report(case_id: str):
-    """Generate an EU AI Act + EEOC compliance report for a named case."""
-    if case_id not in CASE_CONFIG:
-        raise HTTPException(status_code=404, detail=f"Unknown case: {case_id}")
-
-    try:
-        result = run_audit(case_id)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-    try:
-        gemini = get_gemini()
-        report_markdown = gemini.generate_compliance_report(result)
-    except Exception as e:
-        report_markdown = f"[Compliance report unavailable: {e}]"
-
-    return {
-        "case_id": case_id,
-        "case_name": result.get("case_name", case_id),
-        "fairrank_score": result["fairrank"]["score"],
-        "fairrank_label": result["fairrank"]["label"],
-        "report_markdown": report_markdown,
-    }
